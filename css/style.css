@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  /* margin: 10px; */
+  color: red;
+  /* transform: rotate(60deg) */
+  /* transform: skew(-150deg) */
+  /* transform: translateX(12rem);
+  transform: translateY(12rem); */
+  /* animation: anim1 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: 1s;
+  animation-iteration-count: infinite; */
+  /* transition: all ease .5s; */
+}
+
+/* .box:hover{
+    background-color: red;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 100%;
+} */
+
+@keyframes anim1 {
+  0% {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    position: relative;
+    left: 500px;
+    top: 0;
+    background-color: green;
+    rotate: 100deg;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 100%;
+  }
+  50% {
+    position: relative;
+    left: 500px;
+    top: 500px;
+    background-color: blue;
+    rotate: 200deg;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 0px;
+    opacity: 100%;
+  }
+  75% {
+    position: relative;
+    left: 0;
+    top: 500px;
+    background-color: red;
+    rotate: 300deg;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 100%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 100%;
+    rotate: 360deg;
+  }
+}
