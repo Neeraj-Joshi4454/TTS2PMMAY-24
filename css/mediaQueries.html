@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            height: 100vh;
+            width: 100vw;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width:375px){
+            .main{
+                background-color: red;
+                color: white;
+            }
+        }
+
+        @media screen and (min-width:375px) and (max-width:425px){
+            .main{
+                background-color: green;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <h1>Responsive Layout</h1>
+    </div>
+
+
+</body>
+</html>
